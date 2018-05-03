@@ -1,0 +1,62 @@
+        {/* Uses a header that scrolls with the text, rather than staying locked at the top */}
+        <div className="demo-big-content">
+            <Layout>
+                <Header className="header-color" title="Dan" scroll>
+                    <Navigation>
+                        <Link to="/landingpage">Home</Link>
+                        <Link to="/aboutme">About</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/contact">Contact Me</Link>
+                        <Link to="/resume">Resume</Link>
+                    </Navigation>
+                </Header>
+                <Drawer title="Title">
+                    <Navigation>
+                        <Link to="/landingpage">Home</Link>
+                        <Link to="/aboutme">About</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/contact">Contact Me</Link>
+                        <Link to="/resume">Resume</Link>
+                    </Navigation>
+                </Drawer>
+                <Content>
+                    <div className="page-content" />
+                    <MainRouter />
+                </Content>
+            </Layout>
+        </div>
+
+
+
+        {/* Uses a transparent header that draws on top of the layout's background */}
+        <div className="main">
+            <Layout className="main-layout">
+            {/* style={{background: 'url(https://images.unsplash.com/photo-1489254156322-7bf1c6e2a9a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=98433863a1bd9221964533ee9316cc5b&auto=format&fit=crop&w=500&q=60)', backgroundSize: 'cover'}} */}
+                <Header transparent title=" " style={{color: 'white'}}>
+                    <Navigation className="navbarNav">
+                        <Link to="/landingpage">Home</Link>
+                        <Link to="/aboutme">About</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/contact">Contact Me</Link>
+                        <Link to="/resume">Resume</Link>
+                    </Navigation>
+                </Header>
+                <Drawer title="Title">
+                    <Navigation>
+                        <Link to="/landingpage">Home</Link>
+                        <Link to="/aboutme">About</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/contact">Contact Me</Link>
+                        <Link to="/resume">Resume</Link>
+                    </Navigation>
+                </Drawer>
+                <Content className="main-content">
+                <MainRouter />
+                </Content>
+            </Layout>
+        </div>
+
+
+
+
+color for background image - #BBC5F2

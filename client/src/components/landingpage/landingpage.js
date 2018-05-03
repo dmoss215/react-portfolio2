@@ -24,21 +24,21 @@ class Landing extends Component {
                     </Cell>
                 </Grid>
                 <Grid>
-                    <Cell  className="social-link" col={3} tablet={12}>
+                    <Cell  className="social-link" col={3} tablet={12} hidePhone hideTablet>
                     </Cell>
-                    <Cell  style={{marginBottom: '30px'}} className="social-link" col={2} tablet={12}>
+                    <Cell  style={{marginBottom: '30px'}} className="social-link" col={2} tablet={12} phone={12}>
                         {/* <h1 className=""> Github </h1> */}
                         <a href="https://github.com/dmoss215"><img src={githubImg} alt="github" /></a>
                     </Cell>
-                    <Cell  style={{marginBottom: '30px'}} className="social-link" col={2} tablet={12}>
+                    <Cell  style={{marginBottom: '30px'}} className="social-link" col={2} tablet={12} phone={12}>
                         {/* <h1 className=""> Linkedin </h1> */}
                         <a href="https://www.linkedin.com/in/daniel-moss-72a09099/"><img src={linkedinImg} alt="github" /></a>
                     </Cell>
-                    <Cell  style={{marginBottom: '30px'}} className="social-link" col={2} tablet={12}>
+                    <Cell  style={{marginBottom: '30px'}} className="social-link" col={2} tablet={12} phone={12}>
                         {/* <h1 className=""> Email </h1> */}
                         <a href="mailto:danmoss215@gmail.com"><img src={emailImg} alt="github" /></a>
                     </Cell>
-                    <Cell  className="social-link" col={3} tablet={12}>
+                    <Cell  className="social-link" col={3} tablet={12} hidePhone hideTablet>
                     </Cell>
                 </Grid>
             </div>

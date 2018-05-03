@@ -14,3 +14,10 @@
     text-align: center;
     width: 20px;
 }
+
+@media screen and (max-width: 560px) {
+    /* start of phone styles */
+    .main-landingpage {
+        height: 100%;
+    }
+}
